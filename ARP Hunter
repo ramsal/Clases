@@ -39,7 +39,7 @@ echo
 mac=$(arp -a | grep '192.168.2.1)')
 echo "La MAC del router es $mac"
 echo
-real="? (192.168.2.1) en 18:6d:8f:dc:ff:05 [ether] en eth0" 
+real="? (192.168.2.1) en 18:66:8f:dc:ff:f1 [ether] en eth0" 
 echo "La MAC del router debería ser $real"
 
 if [ "$mac" = "$real" ]; then
