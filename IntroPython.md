@@ -66,3 +66,25 @@ while (i<=100):
     i+=1
 print("fin")
 ```
+
+### Listas
+Lorem Ipsum
+```
+#Hacer una Lista
+semana = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+
+#Obtener el primer elemento
+primero = semana[0]
+
+#Obtener el último elemento
+ultimo = semana[-1]
+
+#Recorrer la Lista
+for semana in semana:
+    print(semana)
+
+#Añadir elemento
+semana = []
+semana.append('lunes')
+semana.append('martes')
+```
