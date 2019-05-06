@@ -41,6 +41,7 @@ print(full_name)
 ### Condicional If
 Lorem Ipsum
 ```
+b=6
 if b<10 :
     print ("es menor")
 else:
