@@ -88,3 +88,22 @@ semana = []
 semana.append('lunes')
 semana.append('martes')
 ```
+
+### Funciones
+Lorem Ipsum
+```
+#Crear Función
+def saludo():
+    print ("Hola soy Edu Feliz Navidad")
+    print ("------------------------------")
+
+#Invocar Función
+saludo()
+
+#Crear Función con parámetros
+def suma(n1, n2):
+    print (n1+n2)
+
+#Invocar Función pasando parámetros
+suma(4,8)
+```
