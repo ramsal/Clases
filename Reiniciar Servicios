@@ -1,4 +1,3 @@
-#Ejercicio de Clase
 #!/bin/bash
 #Script para revisar el estado de httpd y mysqld. Para iniciar/reiniciar los servicios.
 
