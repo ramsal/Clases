@@ -6,13 +6,13 @@ Manual básico para Python
 Lorem Ipsum
 ```
 print("Hola Mundo!")
-cadena = "En un lugar de la Mancha"
+cadena = "En un lugar de la Mancha "
 print (cadena)
 print (len(cadena))
 ```
 
 ### Comentarios
-Lorem Ipsum
+Los comentarios en el código nos sirven como indicaciones, no son compilados, por lo que no influye en la ejecucuión del programa.
 ```
 #Esto es un comentario
 ```
