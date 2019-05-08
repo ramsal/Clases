@@ -18,7 +18,7 @@ Los comentarios en el código nos sirven como indicaciones, no son compilados, p
 ```
 
 ### Operaciones Matemáticas
-Lorem Ipsum
+Python se utiliza mucho para operaciones de cálculo, aunque no es imprescindible, se recomienda establecer la preferencia de las operaciones con paréntesis, para que el resultado sea el que buscas.
 ```
 b=2+8+10+11-20
 print (b)
