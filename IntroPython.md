@@ -95,7 +95,7 @@ Lorem Ipsum
 #Crear Función
 def saludo():
     print ("Hola soy Edu Feliz Navidad")
-    print ("------------------------------")
+    print ("----------------------------")
 
 #Invocar Función
 saludo()
