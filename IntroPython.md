@@ -108,3 +108,12 @@ def suma(n1, n2):
 #Invocar Función pasando parámetros
 suma(4,8)
 ```
+
+### Lectura 
+Lorem Ipsum
+```
+print ("BIENBENID@")
+nombre=input("Dime tu nombre> ")
+edad=int (input("Dime tu edad> "))
+print ("Hola ",nombre," tienes ",edad)
+```
