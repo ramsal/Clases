@@ -1,4 +1,5 @@
 #!/bin/bash
+#Necesitas un fichero dnstest.txt con varios servidores de DNS registrados
 red=`tput setaf 196`
 green=`tput setaf 2`
 reset=`tput sgr0`
