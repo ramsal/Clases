@@ -1,6 +1,5 @@
-#Ejercicio de Clase
-
 #!/bin/bash
+#Ejercicio de Clase
 
 clear
 
