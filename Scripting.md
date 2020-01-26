@@ -85,7 +85,7 @@ fi
 ~~~~
 
 
-8. Envío de parámetros  `./test.sh X=44 Y=100`
+8. Envío de parámetros  `./script8.sh X=2 Y=8`
 ~~~~
 #!/bin/bash
 
@@ -99,6 +99,6 @@ Y) y=$val;;
 *)
 esac
 done
-((result=x+y))
-echo "X+Y=$result"
+((resultado=x+y))
+echo "X+Y=$resultado"
 ~~~~
