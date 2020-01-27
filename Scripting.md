@@ -69,7 +69,7 @@ echo "Su nombre es: $nombre"
 ~~~~
 
 
-7. Condicional If [ -gt | -lt | -le | -ge ] 
+7. Condicional If  [ -gt | -lt | -le | -ge ] 
 ~~~~
 #!/bin/bash
 
@@ -85,7 +85,7 @@ fi
 ~~~~
 
 
-8. Envío de parámetros  `./script8.sh X=2 Y=8`
+8. Envío de parámetros en consola  `./script8.sh X=2 Y=8`
 ~~~~
 #!/bin/bash
 
