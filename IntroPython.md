@@ -25,7 +25,7 @@ print (b)
 ```
 
 ### Concatenar
-Lorem Ipsum
+Unir diferentes cadenas de texto o variables.
 ```
 b=6
 resultado = "El resultado es: "
@@ -39,7 +39,7 @@ print(full_name)
 ```
 
 ### Condicional If
-Lorem Ipsum
+Se establece una condición principal cuya respuesta debe ser un booleano (True o False), la primera salida corresponde al True de la condición del If, en caso de no cumplir la condición se entraría en el Else y se imprimiría su condición.
 ```
 b=6
 if b<10 :
@@ -90,7 +90,7 @@ semana.append('martes')
 ```
 
 ### Funciones
-Lorem Ipsum
+El uso de funciones modulariza el código, y hace que sea más legible. 
 ```
 #Crear Función
 def saludo():
