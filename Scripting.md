@@ -4,7 +4,7 @@
 * Consola de cualquier distribución de Linux `Ctrl + Alt + T`
 * Creamos el fichero `touch script1.sh`
 * Otorgamos los permisos necesarios para la ejecución `chmod +x script1.sh`
-* Accesdemos al fichero para desarrollar el script `vim script1.sh`
+* Accedemos al fichero para desarrollar el script `vim script1.sh`
 * Ejecutamos el script `./script1.sh`
 
 ## Prácticas
@@ -62,7 +62,7 @@ done
 ~~~~
 #!/bin/bash
 
-echo -n "Introduzca su nombre:"
+echo -n "Hola, introduzca su nombre:"
 read nombre
 
 echo "Su nombre es: $nombre"
@@ -73,7 +73,7 @@ echo "Su nombre es: $nombre"
 ~~~~
 #!/bin/bash
 
-echo -n "Dime tu edad: "
+echo -n "Digame su edad: "
 read numero
 
 if [[ $numero -gt 18 ]]
