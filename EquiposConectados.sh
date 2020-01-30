@@ -2,7 +2,6 @@
 #Ejercicio de Clase
 
 clear
-
 echo "Equipos Conectados"
 
 cont=1
