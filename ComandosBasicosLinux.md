@@ -108,19 +108,14 @@ This are just examples. chmod has a lot of different configurations for differen
 
 
 ## Services
-- sudo service <service_name> <option> : manage services
- bluetooth
- network
- lightdm
- network-manager
- ssh
- status | start | restart | stop
+- sudo service <service_name> [status | start | restart | stop]
 
 
 ## Secure SHell
 SSH is some kind of an abbreviation of Secure SHell. It is a protocol that allows secure connections between computers. ssh (SSH client) is a program for logging into a remote machine and for executing commands on a remote machine.
-ssh <server's IP/Domain_name> - connects to a server that supports ssh. Uses the username from your local machine
-ssh <username>@<server's IP/Domain_name> - specify a different username
-ssh -p <port_number> <username>@<server's IP/Domain_name> - specify a port. Default port is 22
-________________________________________
- md5sum – calc hash md5
+- ssh <server's IP/Domain_name> - connects to a server that supports ssh. Uses the username from your local machine
+- ssh <username>@<server's IP/Domain_name> - specify a different username
+- ssh -p <port_number> <username>@<server's IP/Domain_name> - specify a port. Default port is 22
+
+##Others
+- md5sum – calc hash md5
