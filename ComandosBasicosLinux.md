@@ -7,8 +7,7 @@
 - cd <path> - change directory to path
 - cd - takes to <user> directory[denoted by ~]
 - cd / - takes to root directory[denoted by /]
-- cd - - takes to the previous directory you were in)
-
+- cd -- takes to the previous directory you were in)
 - pwd - print working directory. 
 - dirs - see the contents of the directory stack.
 - touch <filename>- creates a new file with any extension we want.
@@ -117,5 +116,5 @@ SSH is some kind of an abbreviation of Secure SHell. It is a protocol that allow
 - ssh <username>@<server's IP/Domain_name> - specify a different username
 - ssh -p <port_number> <username>@<server's IP/Domain_name> - specify a port. Default port is 22
 
-##Others
+## Others
 - md5sum – calc hash md5
