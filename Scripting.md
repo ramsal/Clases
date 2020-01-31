@@ -27,7 +27,7 @@ echo -n "Escribir sin salto de linea"
 #Variable suma
 ((suma=2+4))
 #Imprimir el resultado
-echo $sums
+echo $suma
 ~~~~
 
 
