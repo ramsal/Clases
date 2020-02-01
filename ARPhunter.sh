@@ -3,7 +3,7 @@
 clear
 
 echo "*******************************************"
-echo "                    ARP HUNTER"
+echo "                    ARP HUNTER "
 echo "*******************************************"
 
 echo "                   sNMNo  oNMNs                    "
