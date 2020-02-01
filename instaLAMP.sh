@@ -14,10 +14,8 @@
 sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:ondrej/php
 
-
 #Update the repositories
 sudo apt-get update
-
 
 #Apache, Php, MySQL and required packages installation
 sudo apt-get -y install apache2 php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-curl php7.0-mysql php7.0-gd php7.0-cli php7.0-dev mysql-client
@@ -45,8 +43,6 @@ else
 fi
 
 echo -e "\n"
-
-
 
 #Create info.php for testing php processing
 #sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
