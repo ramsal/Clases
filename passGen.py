@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+#RamSal | BeeHackers
 
 import random
 k="abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ#@!][}{?¿%&"
