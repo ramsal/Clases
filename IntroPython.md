@@ -47,6 +47,13 @@ if b<10 :
 else:
     print("es mayor")
 ```
+```
+name = input("¿Cómo te llamas? ")
+if name=="ramon":
+    print("Bienvenido señor, " + name + "!")
+else:
+    print("Hola, que tal estas " + name + "?")
+```
 
 ### Bucle For
 Lorem Ipsum
