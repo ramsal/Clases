@@ -10,24 +10,26 @@
    exit 1  
  fi  
 
-#Add PHP7 PPA
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:ondrej/php
-
 #Update the repositories
 sudo apt-get update
 
 #Apache, Php, MySQL and required packages installation
-sudo apt-get -y install apache2 php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-curl php7.0-mysql php7.0-gd php7.0-cli php7.0-dev mysql-client
-php7.0enmod mcrypt
+sudo apt-get -y install apache2 
 
 #Set Permissions  
 sudo chown -R www-data:www-data /var/www  
 
-#The following commands set the MySQL root password to MYPASSWORD123 when you install the mysql-server package.
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password #CHANGEME'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password #CHANGEME'
+#Firewall
+ufw enable
+ufw allow 22
+ufw allow in "Apache Full"
+
+#Install MySQL  
 sudo apt-get -y install mysql-server
+#sudo mysql_secure_installation
+
+#Install PHP
+sudo apt install php libapache2-mod-php php-mysql
 
 #Restart all the installed services to verify that everything is installed properly
 echo -e "\n"
@@ -45,4 +47,4 @@ fi
 echo -e "\n"
 
 #Create info.php for testing php processing
-#sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
+sudo echo "<?php phpinfo(); ?>" > /var/www/html/info.php
