@@ -33,6 +33,7 @@
 - find <query> - finds files and directories with name query in the current directory and its subdirectories
 - find -d <query> - looks for a directory with name query
 - find -f <query> - looks for a file with name query
+- sed 's/cadena1/cadena2/g' fichero > fichero2
 - history - shows all typed commands history
 - history n -shows last n commands
 - exit - exit terminal session
