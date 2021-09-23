@@ -1,80 +1,77 @@
 ## General
-- ls - lists files
-- -a - display hidden files
-- -R - recursively displays files
-- -l - displays extra details like size, owner, group, date and permissions
-- tree <path> - display files and directories as a tree structure.
-- cd <path> - change directory to path
-- cd - takes to <user> directory[denoted by ~]
-- cd / - takes to root directory[denoted by /]
-- cd -- takes to the previous directory you were in)
-- pwd - print working directory. 
-- dirs - see the contents of the directory stack.
-- touch <filename>- creates a new file with any extension we want.
-- rm <filename> - removes a file.
-- rm -r <directory> - recursively removes all files 
-- mkdir <dir_name> - makes a new directory
-- rmdir <dir_name> - removes an empty directory
-- cp /path/to/file /path/to/copy/to - used to copy file.
- (Use cp -r to copy a directory recursively)
-- mv /old/path/to/file /new/path/to/file - used to move file.
+- ls listar ficheros
+	- -a muestra ficheros ocultos
+	- -R muestra ficheros recursivamente
+	- -l muestra detalles extra como tamaño, permisos, etc
+- tree <path> muestra ficheros y directorios en forma de árbol
+- cd <path> cambio de directorio
+- cd ~ accede al directorio del usuario en uso
+- cd / accede a la raiz
+- cd -- vuelve al directorio previo
+- pwd imprime la ruta donde se encuentra
+- touch <filename> crea un nuevo fichero vacío con la extesión deseada
+- rm <filename> elimina el fichero
+- rm -r <directory> elimina recursivamente todos los ficheros 
+- mkdir <dir_name> crea un nuevo directorio
+- rmdir <dir_name> elimina un directorio vacío
+- rm -rf <dir_name> elimina el directorio y todo su contenido
+- cp /path/to/file /path/to/copy/to copia un fichero de una ruta a otra
+- cp -r copia el directorio de forma recursiva
+- mv /old/path/to/file /new/path/to/file mueve un directorio
 - grep [flag] <text to search> <files to search in>
-- -i - Performs case insensitive matching
-- -l - Outputs the name of the files 
-- -L - Outputs which the search text is not present
-- --color=auto - Highlights the search text in the output
-- cut - cuts out selected portions of each line from file and writes them to the standard output.
-- cut -c 2-5 file - cut characters 2 to 5 from each line of file
-- cut -d"x" -f 1 file - returns each part of every line before first occurrence of 'x' (-d is delimiter and -f is field)
+	- -i case insensitive
+	- -l Outputs the name of the files 
+	- -L Outputs which the search text is not present
+	- --color=auto destaca el texto filtrado en color en la salida
+- cut cuts out selected portions of each line from file and writes them to the standard output.
+	- cut -c 2-5 file cut characters 2 to 5 from each line of file
+	- cut -d"x" -f 1 file returns each part of every line before first occurrence of 'x' (-d is delimiter and -f is field)
 
-- clear - scrolls down to an empty screen
-- reset - initialises terminal variables to thier default value
-- passwd <username> - Change password for a user
-- find <query> - finds files and directories with name query in the current directory and its subdirectories
-- find -d <query> - looks for a directory with name query
-- find -f <query> - looks for a file with name query
+- clear limpia la pantalla
+- reset inicializa la terminal
+- passwd <username> cambia la contraseña del usuario 
+- find <query> busca ficheros y directorios por nombre, recursivamente
+	- find -d <query> busca directorios por nombre
+	- find -f <query> busca ficheros por nombre
 - sed 's/cadena1/cadena2/g' fichero > fichero2
-- history - shows all typed commands history
-- history n -shows last n commands
-- exit - exit terminal session
+- history muestra el historial de comandos escritos
+- history muestra los últimos n comandos escritos
+- exit cerrar la sesión de la terminal
 
-- sudo <command> - Run the command as superuser(a.k.a. root)
-- whoami - gives the username of the current user.
-- su <username> - Used to switch to a different user. This prompts for the password of the user you switch to.
-- sudo -i - Switch to root user. This user has complete access to all files.
-- man [section_number] <command> - shows manual 
-- apropos <argument> - find the argument in all man pages.
+- whoami muestra el nombre del user actual
+- sudo <command> ejecutar el comando como superuser (a.k.a. root)
+- su <username> para cambiar a otro usuario
+- [a diferencia de su, sudo pide a los usuarios su propia contraseña en lugar de la del usuario requerido]
+- man [section_number] <command> muestra el manual de cualquier programa
 
-## Downloading
-- wget <url_to_download> - Downloads the file url.
-- wget -c <url_to_download> - Resumes an incomplete download. 
-- wget --tries=100 <url_to_download> - Set the retry download attempts. This is very useful when the download file is large and the internet connection has problems.
-- wget -i <download_list_file.txt> - For Multiple downloads. Downloads all the files/URLs mentioned in file.
-- wget --recursive --page-requisites --html-extension --convert-links --no-parent <URL> - Use this command to download the entire website so that you can view it offline.
-- curl -O <url_to_download> - Downloads the file at the url.
+## Descargando
+- wget <url_to_download> descargar un fichero de una URL
+- wget -c <url_to_download> reanuda descargas incompeltas 
+- wget --tries=100 <url_to_download> establece los intentos de reintento de descarga 
+- wget -i <download_list_file.txt> descarga de multiples ficheros
+- wget --recursive --page-requisites --html-extension --convert-links --no-parent <URL> descarga de un sitio web completo
+- curl -O <url_to_download> descargar un archivo de una URL
 
 
-## Installation Commands
+## Comandos de Instalación
 ### Debian, Ubuntu and other debian-based distros
-- apt-get install <package-name> - Installs a package
-- Important flags
--y - Replies yes to all confirmations apt-get asks for during install.
-- apt-cache search <query> - Searches package names and descriptions for the query string. Used to find the package-names.
-- apt-get remove <package-name> - Removes a package (but not the configuration files)
-- apt-get autoremove - Remove packages that were automatically installed to satisfy dependencies for some package and that are no more needed.
-- apt-get purge <package-name> - Removes a package (along with the configuration files)
-- apt-get update - APT keeps a local database on your hard drive with a list of all available packages and where to find them. This command explicitly updates the database.
-- apt-get upgrade - Installs newer versions of the packages.
+- apt-get install <package-name> instalar paquete
+	- y instalación desatendida, responde YES a la pregunta
+	- apt-cache search <query> busca en la caché por nombre del paquete
+	- apt-get remove <package-name> desinstala un paquete (pero no elimina los ficheros de configuración)
+	- apt-get purge <package-name> desinstala un paquete y elimina los ficheros de configuración
+	- apt-get update actualización de la base de datos local de APT
+	- apt-get upgrade actualiza las versiones más recientes de los paquetes ya instalados
 
 ### Fedora, Red Hat and CentOS
-- yum install <package-name> - Installs a package
+- yum install <package-name> instalación de paquetes
 
 ## Changing Permissions
 - chmod a+x file - Grants execution permission to all users of a file.
 - chmod a+w file - Grants write permission to all users of a file.
 - chmod a+r file - Grants read permission to all users of a file.
-This are just examples. chmod has a lot of different configurations for different kinds of permissions. For all details see its man page.
 - chown -R <username> path/of/file/or/directory - Gives the ownership of the file or all files in the directory and its subdirectories to the mentioned user.
+- [https://chmod-calculator.com/]
 
 ## Networking
 - ifconfig - when used without any flags, used to display the status of all active network interfaces.
