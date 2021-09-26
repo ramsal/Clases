@@ -102,3 +102,21 @@ done
 ((resultado=x+y))
 echo "X+Y=$resultado"
 ~~~~
+
+
+9. Salida con Sleeps
+~~~~
+#!/bin/bash
+
+echo "Hola Mundo"
+
+if [1 -eq 1 ]
+then
+  echo "Adios Mundo"
+fi
+sleep 5
+while true
+do
+  echo "Me Voy"
+done
+~~~~
