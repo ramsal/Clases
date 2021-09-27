@@ -67,10 +67,10 @@
 - yum install <package-name> instalación de paquetes
 
 ## Changing Permissions
-- chmod a+x file - Grants execution permission to all users of a file.
-- chmod a+w file - Grants write permission to all users of a file.
-- chmod a+r file - Grants read permission to all users of a file.
-- chown -R <username> path/of/file/or/directory - Gives the ownership of the file or all files in the directory and its subdirectories to the mentioned user.
+- chmod a+x file - Otorga permiso de ejecución a todos los usuarios de un archivo. 
+- chmod a+w file - Otorga permiso de escritura a todos los usuarios de un archivo. 
+- chmod a+r file - Otorga permiso de lectura a todos los usuarios de un archivo.
+- chown -R <username> path/of/file/or/directory - Otorga la propiedad del archivo o de todos los archivos del directorio y sus subdirectorios al usuario mencionado. 
 - [https://chmod-calculator.com/]
 
 ## Networking
@@ -94,6 +94,7 @@
 
 ## Process Management
 - top - displays processor activity in real time.
+- htop / bashtop / ...
 - ps returns the snapshot of current processes.
 - ps -e returns every process running on the system
 - ps -u <useraccount> returns list of processes running on user account.
