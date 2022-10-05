@@ -39,9 +39,8 @@ echo $suma
 for (( i=1; i<=5; i++ ))
 do
 echo -n "$i "
-done
-
 printf "\n"
+done
 ~~~~
 
 
@@ -119,4 +118,33 @@ while true
 do
   echo "Me Voy"
 done
+~~~~
+
+10. SwitchCase
+~~~~
+#!/bin/bash
+
+echo -n "Pon un País "
+read COUNTRY
+
+echo -n "El idioma oficial de $COUNTRY es "
+
+case $COUNTRY in
+
+  Lituania)
+    echo -n "Lituano"
+    ;;
+
+  Rumania)
+    echo -n "Rumano"
+    ;;
+
+  Italia)
+    echo -n "Italiano"
+    ;;
+
+  *)
+    echo -n "unknown"
+    ;;
+esac
 ~~~~
