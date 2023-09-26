@@ -158,7 +158,7 @@ echo "script ejecutado - $(date)" >> /home/test/Documentos/log-script.txt
 
 exit
 ~~~~
-Crear un servicio
+Crear un servicio  
 nano /etc/systemd/system/mi-primer-servicio.service
 ~~~~
 [Unit]
@@ -172,7 +172,7 @@ ExecStart=/home/test/Documentos/mi-primer-script.sh
 [Install]
 WantedBy=multi-user.target
 ~~~~
-sudo chmod 777 /etc/systemd/system/mi-primer-servicio.service
-sudo systemctl start mi-primer-servicio
-sudo systemctl enable mi-primer-servicio
-sudo systemctl status mi-primer-servicio
+sudo chmod 777 /etc/systemd/system/mi-primer-servicio.service   
+sudo systemctl start mi-primer-servicio   
+sudo systemctl enable mi-primer-servicio   
+sudo systemctl status mi-primer-servicio   
