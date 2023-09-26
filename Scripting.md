@@ -148,3 +148,31 @@ case $COUNTRY in
     ;;
 esac
 ~~~~
+
+x. ExtraBall
+~~~~
+#!/bin/bash
+
+sudo apt update
+echo "script ejecutado - $(date)" >> /home/test/Documentos/log-script.txt
+
+exit
+~~~~
+Crear un servicio
+nano /etc/systemd/system/mi-primer-servicio.service
+~~~~
+[Unit]
+Description=Script service
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/test/Documentos/mi-primer-script.sh
+
+[Install]
+WantedBy=multi-user.target
+~~~~
+sudo chmod 777 /etc/systemd/system/mi-primer-servicio.service
+sudo systemctl start mi-primer-servicio
+sudo systemctl enable mi-primer-servicio
+sudo systemctl status mi-primer-servicio
